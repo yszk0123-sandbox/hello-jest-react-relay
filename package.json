@@ -1,0 +1,25 @@
+{
+  "name": "hello-jest-react-relay",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "https://github.com/yszk0123/hello-jest-react-relay.git",
+  "author": "Yuji Suzuki <y0suzuki0123@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "babel-jest": "^20.0.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^2.8.2",
+    "jest": "^20.0.4",
+    "react-test-renderer": "^15.5.4"
+  },
+  "dependencies": {
+    "react": "^15.6.0",
+    "react-dom": "^15.6.0"
+  }
+}
