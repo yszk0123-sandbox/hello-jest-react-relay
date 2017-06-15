@@ -4,6 +4,7 @@ import TodoList from '../TodoList';
 import Button from '../../components/Button';
 import Input from '../../components/Input';
 import AddTodoMutation from '../../mutations/AddTodoMutation';
+jest.mock('../../mutations/AddTodoMutation');
 
 const relay = {
   environment: {},
@@ -11,8 +12,6 @@ const relay = {
 const viewer = {};
 
 test('commits AddTodoMutation after click', () => {
-  const originalCommit = AddTodoMutation.commit;
-  AddTodoMutation.commit = jest.fn();
   const todoList = shallow(<TodoList relay={relay} viewer={viewer} />);
   const title = 'test';
 
@@ -24,5 +23,4 @@ test('commits AddTodoMutation after click', () => {
     { title },
     viewer,
   ]);
-  AddTodoMutation.commit = originalCommit;
 });
