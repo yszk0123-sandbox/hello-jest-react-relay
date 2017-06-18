@@ -4,7 +4,8 @@ import Input from '../components/Input';
 import AddTodoMutation from '../mutations/AddTodoMutation';
 
 export default class TodoList extends React.Component {
-  cosntructor() {
+  constructor(props) {
+    super(props);
     this.state = { title: '' };
   }
 
